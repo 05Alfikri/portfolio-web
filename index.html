@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website Muh. Alfikri Tri Anggoro Pamungkas - Frontend Developer" />
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:title" content="Portfolio | Alfikri - Frontend Developer" />
+    <meta property="og:description" content="Portfolio website Muh. Alfikri Tri Anggoro Pamungkas - Junior Frontend Developer spesialis Web & UI/UX." />
+    <meta property="og:image" content="assets/profile-pic.png" />
+    <meta property="og:type" content="website" />
+    <title>Portfolio | Alfikri</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-brand">
+                <span class="logo">Alfikri</span>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="profile-pic">
+                    <!-- FIX: konsistensi folder "assets" (huruf kecil) -->
+                    <img src="assets/profile-pic.png" alt="Foto Profil Alfikri" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Beranda Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <!-- FIX: hapus ALL CAPS dari HTML, biarkan CSS yang mengatur text-transform -->
+            <h1>Muh. Alfikri Tri Anggoro Pamungkas</h1>
+            <h2>Junior Developer</h2>
+            <p>
+                Saya adalah seorang Junior Developer yang selalu berusaha menciptakan pengalaman digital yang menarik
+                dan mudah digunakan. Saya suka menggabungkan tampilan yang keren dengan fungsi yang berjalan lancar.
+                Yuk, kenalan lebih jauh dan lihat karya-karya yang sudah saya buat!
+            </p>
+
+            <div class="cta-container">
+                <a href="assets/cv-alfikri.pdf" class="download-btn" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+
+            <div class="sosmed-container">
+                <!-- FIX: ganti URL placeholder dengan profil yang sebenarnya (isi sesuai akun Anda) -->
+                <a href="https://www.facebook.com/alfikri" target="_blank" rel="noopener noreferrer" class="sosmed-link"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/alfikri" target="_blank" rel="noopener noreferrer" class="sosmed-link"
+                    aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/mhmmd_alfikri05" target="_blank" rel="noopener noreferrer"
+                    class="sosmed-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alfikri" target="_blank" rel="noopener noreferrer" class="sosmed-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/05Alfikri" target="_blank" rel="noopener noreferrer" class="sosmed-link"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-content-wrapper">
+                        <p class="about-desc">
+                            Saya adalah lulusan S1 Sistem Informasi dari Fakultas Rekayasa Industri, Universitas Telkom.
+                            Sejak lama, saya tertarik dengan dunia web development dan desain tampilan pengguna (UI).
+                            Fokus saya adalah membuat solusi digital berbasis web yang nggak cuma berfungsi dengan baik,
+                            tapi juga nyaman dan mudah digunakan. Waktu magang di Gamelab.id sebagai Web Developer, saya
+                            belajar banyak tentang proses pengembangan software dari awal sampai akhir — mulai dari
+                            perencanaan, kerja bareng tim dari berbagai bagian, sampai pentingnya bikin pengalaman
+                            pengguna yang enak di setiap tahap. Saya terus semangat buat ngembangin kemampuan teknis dan
+                            juga kepekaan desain, khususnya di UI/UX. Tujuan saya adalah bikin solusi digital yang nggak
+                            cuma keren dan inovatif, tapi juga berguna dan ramah buat semua orang. Saya juga senang
+                            kerja bareng orang-orang yang punya semangat yang sama untuk bikin perubahan ke arah yang
+                            lebih baik dan lebih berfokus pada pengguna.
+                        </p>
+                        <div class="about-image">
+                            <!-- FIX: konsistensi folder "assets" (huruf kecil) -->
+                            <img src="assets/profile-pic.png" alt="Foto Alfikri - Junior Frontend Developer" loading="lazy" />
+                        </div>
+                    </div>
+
+                    <!-- Pengalaman Magang -->
+                    <div class="organizational">
+                        <h3>Pengalaman Magang</h3>
+                        <ul class="org-list">
+                            <li class="org-item">
+                                <div class="org-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="org-content">
+                                    <h4>PT Educa Sisfomedia Indonesia (Gamelab Indonesia)</h4>
+                                    <p class="org-position">
+                                        Divisi Pengembangan Web
+                                    </p>
+                                    <p class="org-period">Juni – September 2023</p>
+                                    <!-- FIX: hapus <p> pembungkus yang tidak valid di sekitar <ul> -->
+                                    <ul class="org-desc">
+                                        <li>Merancang, mengembangkan, dan memodifikasi situs web.</li>
+                                        <li>Memastikan situs web responsif dan berfungsi dengan baik di semua perangkat.</li>
+                                        <li>Menguji situs web yang sedang dikembangkan untuk menemukan dan memperbaiki kesalahan.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Organizational -->
+                    <div class="organizational">
+                        <h3>Pengalaman Organisasi</h3>
+                        <ul class="org-list">
+                            <li class="org-item">
+                                <div class="org-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="org-content">
+                                    <h4>Panitia PKKMB Universitas Telkom</h4>
+                                    <p class="org-position">
+                                        Divisi LO / Liaison Officer
+                                    </p>
+                                    <p class="org-period">2021 dan 2022</p>
+                                    <!-- FIX: hapus <p> pembungkus yang tidak valid di sekitar <ul> -->
+                                    <ul class="org-desc">
+                                        <li>Menjadi pemimpin dalam regu mahasiswa/i baru.</li>
+                                        <li>Mengarahkan mahasiswa/i baru untuk mengikuti seluruh rangkaian kegiatan PKKMB Universitas Telkom.</li>
+                                        <li>Melakukan absensi dan memastikan kehadiran mahasiswa/i baru melebihi batas minimal yaitu 75%.</li>
+                                        <li>Melakukan pengecekan tugas yang diberikan oleh panitia.</li>
+                                        <li>Menjembatani antara mahasiswa/i baru dengan panitia ataupun sebaliknya.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills">
+                        <h3>Keahlian</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Web Design</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikasi dan Pelatihan Section -->
+                <div class="certifications">
+                    <h3>Sertifikasi dan Pelatihan</h3>
+                    <div class="cert-grid">
+
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <!-- FIX: konsistensi folder "assets", nama file tanpa spasi, alt text deskriptif -->
+                                <img src="assets/sertifikat/course-completion-java-foundations.png"
+                                    alt="Sertifikat Course Completion Java Foundations - Oracle Academy 2021" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Course Completion Java Foundations</h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2021</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/final-exam-completion-java-foundations.png"
+                                    alt="Sertifikat Final Exam Completion Java Foundations - Oracle Academy 2021" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Final Exam Completion Java Foundations</h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2021</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/course-completion-java-programming.png"
+                                    alt="Sertifikat Course Completion Java Programming - Oracle Academy 2022" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Course Completion Java Programming</h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2022</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/final-exam-completion-java-programming.png"
+                                    alt="Sertifikat Final Exam Completion Java Programming - Oracle Academy 2022" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Final Exam Completion Java Programming</h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2022</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/internship-certificate-gamelab-indonesia.png"
+                                    alt="Sertifikat Magang - Gamelab Indonesia 2023" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Internship Certificate - Gamelab Indonesia</h4>
+                                <p>Gamelab Indonesia</p>
+                                <span class="cert-date">2023</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/sertifikat-pengembangan-web.png"
+                                    alt="Sertifikat Pengembangan Web - LSP Informatika 2023" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>Sertifikat Pengembangan Web</h4>
+                                <p>Lembaga Sertifikasi Profesi Informatika</p>
+                                <span class="cert-date">2023</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/course-completion-ai-machine-learning-java.png"
+                                    alt="Sertifikat Course Completion AI with Machine Learning in Java - Oracle Academy 2024" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>
+                                    Course Completion Artificial Intelligence with Machine
+                                    Learning in Java
+                                </h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2024</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-logo">
+                                <img src="assets/sertifikat/final-exam-completion-ai-machine-learning.png"
+                                    alt="Sertifikat Final Exam Completion AI with Machine Learning - Oracle Academy 2024" loading="lazy" />
+                            </div>
+                            <div class="cert-info">
+                                <h4>
+                                    Final Exam Completion Artificial Intelligence with Machine
+                                    Learning
+                                </h4>
+                                <p>Oracle Academy</p>
+                                <span class="cert-date">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio Saya</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <!-- FIX: konsistensi folder "assets", alt text deskriptif -->
+                        <img src="assets/portfolio/scentials-co.png" alt="Screenshot Company Profile Website Scentials.co" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Company Profile Website</h3>
+                                <p>Web Development</p>
+                                <div class="portfolio-links">
+                                    <!-- FIX: isi href dengan URL yang sebenarnya, atau hapus jika belum ada -->
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Live Demo Company Profile Website">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Repository GitHub Company Profile Website">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="assets/portfolio/car-showroom.png" alt="Screenshot Car Showroom Web Development" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Car Showroom</h3>
+                                <p>Web Development</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Live Demo Car Showroom">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Repository GitHub Car Showroom">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-img">
+                        <img src="assets/portfolio/ui-telkomedika.png" alt="Screenshot UI Design Clinic App - Telkomedika" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Clinic App</h3>
+                                <p>UI Mobile App</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Live Demo Clinic App">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Repository GitHub Clinic App">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-img">
+                        <img src="assets/portfolio/mobile-telkomedika.png" alt="Screenshot Clinic Mobile App - Telkomedika" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Clinic Mobile App</h3>
+                                <p>Mobile App Development</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Live Demo Clinic Mobile App">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" target="_blank" aria-label="Lihat Repository GitHub Clinic Mobile App">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <!-- FIX: bungkus email dengan mailto link -->
+                        <p><a href="mailto:alfikrialfikri.tap@gmail.com">alfikrialfikri.tap@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telepon</h3>
+                        <!-- FIX: bungkus nomor telepon dengan tel link agar bisa diklik di HP -->
+                        <p><a href="tel:+6282320781045">082320781045</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lokasi</h3>
+                        <p>Bandung, Jawa Barat, Indonesia</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" placeholder="Topik pesan Anda" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">Alfikri</span>
+                    <p>
+                        Frontend Developer yang bersemangat dalam menciptakan pengalaman
+                        digital yang menarik dan fungsional.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <!-- FIX: ganti URL placeholder dengan profil yang sebenarnya (isi sesuai akun Anda) -->
+                        <a href="https://www.facebook.com/alfikri" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/alfikri" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mhmmd_alfikri05" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alfikri" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/05Alfikri" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 Muh. Alfikri Tri Anggoro Pamungkas. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
