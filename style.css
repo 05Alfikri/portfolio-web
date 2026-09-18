@@ -115,10 +115,6 @@ h6 {
   transition: var(--transition);
 }
 
-.navbar-brand:hover {
-  transform: translateY(-2px);
-}
-
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -262,9 +258,7 @@ h6 {
   max-width: 800px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-  /* FIX: ganti justify dengan left + hyphens untuk menghindari
-     river effect pada layar sempit */
-  text-align: left;
+  text-align: justify;
   hyphens: auto;
 }
 
